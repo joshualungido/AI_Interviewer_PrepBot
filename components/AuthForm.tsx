@@ -6,9 +6,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { Button } from "@/components/ui/button";
-import {
-    Form,
-} from "@/components/ui/form"
+import { Form } from "@/components/ui/form"
 import Link from "next/link";
 import { toast } from "sonner";
 import FormField from "@/components/FormField"
@@ -75,19 +73,19 @@ const AuthForm = ({ type }: { type: FormType }) => {
                             />
                         }
                         <FormField
-                                control={form.control}
-                                name="email"
-                                label="Email"
-                                placeholder="Enter your email address"
-                                type="email"
-                            />
+                            control={form.control}
+                            name="email"
+                            label="Email"
+                            placeholder="Enter your email address"
+                            type="email"
+                        />
                         <FormField
-                                control={form.control}
-                                name="password"
-                                label="Password"
-                                placeholder="Enter your Password"
-                                type="password"
-                            />
+                            control={form.control}
+                            name="password"
+                            label="Password"
+                            placeholder="Enter your Password"
+                            type="password"
+                        />
                         <Button className="btn"
                             type="submit">{isSignIn ? "Sign In" : "Create an Account"}</Button>
                     </form>
